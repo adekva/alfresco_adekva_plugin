@@ -1,0 +1,46 @@
+<webscript>
+	<shortname>The Webscript for GET Calendar by ID</shortname>
+	<description><![CDATA[JSON Returned:<br/>
+{<br/>
+&nbsp;"status":<br/>
+&nbsp;{<br/>
+&nbsp;&nbsp;"code": Integer,<br/>
+&nbsp;&nbsp;"text": String<br/>
+&nbsp;},<br/>
+&nbsp;"calendar":<br/>
+&nbsp;{<br/>
+&nbsp;&nbsp;"events":<br/>
+&nbsp;&nbsp;[<br/>
+&nbsp;&nbsp;&nbsp;{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"summary": String,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"location": String,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"description": String,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"dtstamp": String,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"uid": String,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"dtstart": String,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"dtend": String<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"allDay": String<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;"class": String<br/>
+&nbsp;&nbsp;&nbsp;}<br/>
+&nbsp;&nbsp;],<br/>
+&nbsp;&nbsp;"vtimezone":<br/>
+&nbsp;&nbsp;{<br/>
+&nbsp;&nbsp;&nbsp;"x-lic-location": String,<br/>
+&nbsp;&nbsp;&nbsp;"tzurl": String,<br/>
+&nbsp;&nbsp;&nbsp;"tzid": String<br/>
+&nbsp;&nbsp;},<br/>
+&nbsp;&nbsp;"properties":<br/>
+&nbsp;&nbsp;{<br/>
+&nbsp;&nbsp;&nbsp;"version": String,<br/>
+&nbsp;&nbsp;&nbsp;"color": String,<br/>
+&nbsp;&nbsp;&nbsp;"prodid": String,<br/>
+&nbsp;&nbsp;&nbsp;"displayname": String<br/>
+&nbsp;&nbsp;}<br/>
+&nbsp;}<br/>
+}]]>
+	</description>
+	<url>/api/adekva/calendars/calendar/{calendarUUID}</url>
+	<authentication>user</authentication>
+   	<format default="json">argument</format>
+	<family>Alfresco Java-Backed WebScripts Calendar</family>
+</webscript>

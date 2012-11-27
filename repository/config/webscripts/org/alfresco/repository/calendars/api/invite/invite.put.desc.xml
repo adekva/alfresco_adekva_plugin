@@ -1,0 +1,16 @@
+<webscript>
+	<shortname>The Webscript for PUT invite</shortname>
+	<description><![CDATA[JSON Returned:<br/>
+{<br/>
+&nbsp;"status":<br/>
+&nbsp;{<br/>
+&nbsp;&nbsp;"code": Integer,<br/>
+&nbsp;&nbsp;"text": String<br/>
+&nbsp;},<br/>
+}]]>
+	</description>
+	<url>/api/adekva/calendars/invite/{calendarUUID}/{sharee}/{access}</url>
+	<authentication>user</authentication>
+   	<format default="json">argument</format>
+	<family>Alfresco Java-Backed WebScripts Calendar</family>
+</webscript>

@@ -1,0 +1,22 @@
+<webscript>
+	<shortname>The Webscript for POST Calendar</shortname>
+	<description><![CDATA[JSON Returned:<br/>
+{<br/>
+&nbsp;"status":<br/>
+&nbsp;{<br/>
+&nbsp;&nbsp;"code": Integer,<br/>
+&nbsp;&nbsp;"text": String<br/>
+&nbsp;},<br/>
+&nbsp;"calendar":<br/>
+&nbsp;{<br/>
+&nbsp;&nbsp;"UUID": String,<br/>
+&nbsp;&nbsp;"displayName": String,<br/>
+&nbsp;&nbsp;"color": String<br/>
+&nbsp;}<br/>
+}]]>
+	</description>
+	<url>/api/adekva/calendars/calendar/{calendarUUID}/{calendarName}/{calendarColor}</url>
+	<authentication>user</authentication>
+   	<format default="json">argument</format>
+	<family>Alfresco Java-Backed WebScripts Calendar</family>
+</webscript>
